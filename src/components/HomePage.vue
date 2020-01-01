@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>This is an home page</h1>
+    <h1>Kevin Rodrigues</h1>
+
+    <p>Test</p>
   </div>
 </template>
 

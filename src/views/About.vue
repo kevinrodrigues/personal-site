@@ -1,5 +1,7 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Kevin Rodrigues</h1>
+
+    <p>I'm a Senior UI Engineer working at Just Eat.</p>
   </div>
 </template>
