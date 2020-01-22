@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1>Kevin Rodrigues</h1>
-
-    <p>Test</p>
+    <p>Hey, 👋🏽 I'm a Senior UI Engineer who's lucky enough to build amazing things at Just Eat.</p>
+    <p>My site is coming soon hold tight! 🦔</p>
   </div>
 </template>
 

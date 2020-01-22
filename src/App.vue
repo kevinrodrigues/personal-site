@@ -2,27 +2,14 @@
   <div>
       <div id="app">
         <div id="nav">
-          <router-link to="/">Home</router-link> |
-          <router-link to="/build">Things I build</router-link> |
-          <router-link to="/contact">Reach out to me</router-link> |
+          <router-link to="/">Me</router-link> |
+          <router-link to="/build">Projects</router-link> |
           <router-link to="/github">Github</router-link>
         </div>
         <router-view/>
       </div>
-      <div id="particles-js"></div>
   </div>
 </template>
-
-<script>
-/* eslint-disable */
-import particles from 'particles.js';
-
-export default {
-  mounted() {
-    particles.particlesJS.load('particles-js', 'particlesjs-config.json', null);
-  },
-};
-</script>
 
 <style lang="scss">
 body {
