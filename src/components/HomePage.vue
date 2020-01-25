@@ -1,13 +1,27 @@
 <template>
   <div>
-    <h1>Kevin Rodrigues</h1>
-    <p>Hey, 👋🏽 I'm a Senior UI Engineer who's lucky enough to build amazing things at Just Eat.</p>
-    <p>My site is coming soon hold tight! 🦔</p>
+    <div class="c-section flex">
+      <div class="flex">
+        <h1>Hello 👋🏽, I'm Kevin <strong>Rodrigues</strong></h1>
+        <p class="spacing">UI Engineer working at Just Eat.</p>
+      </div>
+    </div>
   </div>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+h1 {
+  margin: 0;
+}
+h1 strong {
+  color: #e31b6d;
+}
+
+.spacing {
+  margin: 0;
+  letter-spacing: 1.23px;
+}
 h3 {
   margin: 40px 0 0;
 }
