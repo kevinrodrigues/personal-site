@@ -41,9 +41,9 @@ export default {
           pts.rotate2D(0.0005, space.center);
           pts.forEach((p, i) => {
             const lp = perpend(p);
-            const ratio = Math.min(1, 1 - lp.$subtract(p).magnitude() / (space.size.x / 2));
-            form.stroke(`rgba(255,255,255,${ratio}`, ratio * 2).line([p, lp]);
-            form.fillOnly(['#f03', '#09f', '#0c6'][i % 3]).point(p, 1);
+            const ratio = Math.min(1, 0.9 - lp.$subtract(p).magnitude() / (space.size.x / 1));
+            form.stroke(`rgba(255,255,255,${ratio}`, ratio * 0.2).line([p, lp]);
+            form.fillOnly(['#f03', '#09f', '#0c6'][i % 100]).point(p, 0.4);
           });
         },
       });
@@ -63,7 +63,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.5;
   z-index: -1;
 }
 h1 {

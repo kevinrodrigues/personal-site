@@ -3,7 +3,8 @@
     <div class="c-section flex">
       <div class="flex">
         <h1>Hello 👋🏽, I'm Kevin <strong>Rodrigues</strong></h1>
-        <p class="spacing">UI Engineer working at Just Eat.</p>
+        <p class="spacing--bottom">I'm a UI Engineer at Just Eat.</p>
+        <button class="btn">Projects</button>
       </div>
     </div>
   </div>
@@ -18,9 +19,28 @@ h1 strong {
   color: #e31b6d;
 }
 
-.spacing {
-  margin: 0;
-  letter-spacing: 1.23px;
+.btn {
+  border: 2px solid #fff;
+  box-sizing: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 40px 10px 20px;
+  transition: all 0.5s;
+  background: transparent;
+  color: #fff;
+}
+
+.btn {
+  &:hover,
+  &:focus {
+    background-color: #04c2c9;
+    border-color: #04c2c9;
+  }
+}
+
+.spacing--bottom {
+  margin: 0 0 10px;
 }
 h3 {
   margin: 40px 0 0;
