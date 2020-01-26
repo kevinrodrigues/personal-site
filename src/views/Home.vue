@@ -1,11 +1,11 @@
 <template>
-  <div class="home">
+  <div>
     <home-page/>
   </div>
 </template>
 
 <script>
-import HomePage from '@/components/HomePage.vue';
+import HomePage from '@/components/HomeView.vue';
 
 export default {
   name: 'home',
