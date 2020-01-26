@@ -12,6 +12,29 @@ body {
   margin: 0;
   color: #fff;
 }
+.btn {
+  border: 2px solid #fff;
+  box-sizing: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 40px 10px 20px;
+  transition: all 0.5s;
+  background: transparent;
+  color: #fff;
+}
+
+.btn {
+  &:hover,
+  &:focus {
+    background-color: #04c2c9;
+    border-color: #04c2c9;
+  }
+}
+
+.highlight {
+  color: #04c2c9;
+}
 
 #app {
   font-family: 'Raleway', sans-serif;

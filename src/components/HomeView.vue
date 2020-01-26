@@ -21,15 +21,19 @@
     </div>
 
     <div id="about" class="c-section flex about">
-      <about-page/>
+      <about-view/>
     </div>
 
     <div id="projects" class="c-section flex projects">
-      <project-page/>
+      <project-view/>
     </div>
 
     <div id="contact" class="c-section flex contact">
-      <contact-page/>
+      <contact-view/>
+    </div>
+
+    <div>
+      <footer-view/>
     </div>
   </div>
 </template>
@@ -41,16 +45,18 @@ import {
   Group,
   Line,
 } from 'pts';
-import AboutPage from '@/views/About.vue';
-import ProjectPage from '@/views/Projects.vue';
-import ContactPage from '@/views/Contact.vue';
+import AboutView from '@/views/AboutView.vue';
+import ProjectView from '@/views/ProjectsView.vue';
+import ContactView from '@/views/ContactView.vue';
+import FooterView from '@/views/FooterView.vue';
 
 export default {
   name: 'home',
   components: {
-    AboutPage,
-    ProjectPage,
-    ContactPage,
+    AboutView,
+    ProjectView,
+    ContactView,
+    FooterView,
   },
   mounted() {
     this.patternGenerator();
@@ -120,25 +126,11 @@ nav {
   text-align: left;
   width: 100%;
   z-index: 99;
-}
 
-.btn {
-  border: 2px solid #fff;
-  box-sizing: inherit;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 18px;
-  padding: 10px 40px 10px 20px;
-  transition: all 0.5s;
-  background: transparent;
-  color: #fff;
-}
-
-.btn {
-  &:hover,
-  &:focus {
-    background-color: #04c2c9;
-    border-color: #04c2c9;
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 }
 
