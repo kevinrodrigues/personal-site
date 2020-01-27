@@ -21,9 +21,6 @@ svg {
   position: absolute;
   top: 0;
 }
-form {
-  min-width: 500px;
-}
 input,
 textarea {
   background: #1e242c;

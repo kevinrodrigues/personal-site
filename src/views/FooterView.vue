@@ -14,6 +14,22 @@ footer {
   position: relative;
 }
 
+button {
+  background: #e31b6d;
+  cursor: pointer;
+  font-size: 13px;
+  height: 50px;
+  left: 0;
+  line-height: 40pt;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: -25px;
+  transition: background 0.5s;
+  width: 47px;
+  border: none;
+}
+
 .footer-note {
   color: #8f9aa7;
   font-size: 13px;
