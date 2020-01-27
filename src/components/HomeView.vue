@@ -107,6 +107,13 @@ h1 strong {
   font-size: 22px;
 }
 
+@media screen and (min-width: 600px) {
+  .heading,
+  .sub-heading {
+    font-size: 42px;
+  }
+}
+
 .pts {
   height: 100%;
   left: 0;
