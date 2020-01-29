@@ -1,7 +1,7 @@
 <template>
   <div>
     <footer>
-      <button v-scroll-to="{ el: '#home', duration: 700 }">Top</button>
+      <button v-scroll-to="{ el: '#home', duration: 700 }"></button>
       <p class="footer-note">Kevin Rodrigues &copy; 2020</p>
     </footer>
   </div>
