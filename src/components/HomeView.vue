@@ -6,7 +6,7 @@
         <h1 class="heading">Hello, I'm Kevin <strong>Rodrigues</strong>.</h1>
         <p class="spacing--bottom sub-heading">👲🏽 I'm a Senior UI Engineer.</p>
         <button v-scroll-to="{
-            el: '#about',
+            el: '#projects',
             duration: 700
         }" class="btn">Projects</button>
         <nav class="flex">
