@@ -21,6 +21,9 @@ svg {
   position: absolute;
   top: 0;
 }
+button {
+  margin-top: 20px;
+}
 input,
 textarea {
   background: #1e242c;
