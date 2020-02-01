@@ -13,6 +13,7 @@ body {
   color: #fff;
 }
 .btn {
+  position: relative;
   border: 2px solid #fff;
   box-sizing: inherit;
   cursor: pointer;
@@ -24,11 +25,29 @@ body {
   color: #fff;
 }
 
+.btn:before {
+  content: "";
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  border-top: 0.15em solid #fff;
+  border-right: 0.15em solid #fff;
+  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
 .btn {
   &:hover,
   &:focus {
     background-color: #04c2c9;
     border-color: #04c2c9;
+
+    &:before {
+      right: 10px;
+    }
   }
 }
 
