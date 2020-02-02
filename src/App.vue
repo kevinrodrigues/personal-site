@@ -28,8 +28,8 @@ body {
 .btn:before {
   content: "";
   display: inline-block;
-  width: 0.6em;
-  height: 0.6em;
+  width: 0.4em;
+  height: 0.4em;
   border-top: 0.15em solid #fff;
   border-right: 0.15em solid #fff;
   -webkit-transform: rotate(-45deg);
