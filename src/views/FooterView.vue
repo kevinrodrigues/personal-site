@@ -2,9 +2,7 @@
   <div>
     <footer>
       <div class="c-scroll-top">
-        <button v-scroll-to="{ el: '#home', duration: 700 }">
-          <span></span>
-        </button>
+        <button v-scroll-to="{ el: '#home', duration: 700 }"></button>
       </div>
       <p class="footer-note">Kevin Rodrigues &copy; 2020</p>
     </footer>
@@ -16,36 +14,6 @@ footer {
   background: #1b242f;
   padding: 70px 0 50px 0;
   position: relative;
-}
-
-.c-scroll-top {
-  text-align: center;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-
-.c-scroll-top button {
-  display: inline-block;
-}
-
-.c-scroll-top span {
-  display: inline-block;
-  width: 3em;
-  height: 3em;
-  margin-left: -0.25em;
-  transition: all 0.1s ease-out;
-}
-
-.c-scroll-top span:after {
-  content: '';
-  display: inline-block;
-  margin-top: 0.6em;
-  width: 1.2em;
-  height: 1.2em;
-  border-top: 0.15em solid #fff;
-  border-right: 0.15em solid #fff;
-  transform: rotate(-45deg);
 }
 
 button {
@@ -60,8 +28,26 @@ button {
   right: 0;
   top: -25px;
   transition: background 0.5s;
-  width: 47px;
+  width: 50px;
   border: none;
+  color: #fff;
+}
+
+button:before {
+  content: "";
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  border-top: 0.15em solid #fff;
+  border-right: 0.15em solid #fff;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 .footer-note {
