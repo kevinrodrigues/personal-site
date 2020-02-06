@@ -6,14 +6,54 @@
     <h2>Contact</h2>
     <p class="highlight">📮 Want to reach out?</p>
 
-    <form action="#">
-      <input type="text" placeholder="Name" required>
+    <form
+      name="reach-out"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      @submit.prevent="handleSubmit">
+      <input type="hidden" name="form-name" value="ask-question" />
+      <input type="text" placeholder="Name"  required>
       <input type="email" placeholder="Enter Email" required>
       <textarea placeholder="Message" required></textarea>
       <button type="submit" class="btn">Send</button>
     </form>
   </div>
 </template>
+
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      form: {
+        reachout: 'Test',
+      },
+    };
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`).join('&');
+    },
+    handleSubmit() {
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      };
+
+      axios.post(
+        '/',
+        this.encode({
+          'form-name': 'reach-out',
+          ...this.form,
+        }),
+        axiosConfig,
+      );
+    },
+  },
+};
+</script>
 
 <style scoped lang="scss">
 svg {
