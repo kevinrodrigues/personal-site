@@ -9,21 +9,18 @@
     <form
       name="reach-out"
       method="post"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
       @submit.prevent="handleSubmit">
       <input type="hidden" name="form-name" value="ask-question" />
-      <input type="text" placeholder="Name"  required>
-      <input type="email" placeholder="Enter Email" required>
+      <input type="text" placeholder="Name" name="name" required>
+      <input type="email" placeholder="Enter Email" name="email" required>
       <textarea placeholder="Message" required></textarea>
-      <button type="submit" class="btn">Send</button>
+      <button class="btn">Send</button>
     </form>
   </div>
 </template>
 
 <script>
-import axios from 'axios';
-
+/* eslint-disable */
 export default {
   data() {
     return {
@@ -38,18 +35,20 @@ export default {
         .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`).join('&');
     },
     handleSubmit() {
-      const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      };
-
-      axios.post(
-        '/',
-        this.encode({
-          'form-name': 'reach-out',
-          ...this.form,
-        }),
-        axiosConfig,
-      );
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: this.encode({
+          reachOut: "test",
+          ...this.form
+        })
+      })
+      .then(() => {
+        console.log('test');
+      })
+      .catch(() => {
+        this.$router.push("404");
+      });
     },
   },
 };
