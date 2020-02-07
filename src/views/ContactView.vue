@@ -7,14 +7,26 @@
     <p class="highlight">📮 Want to reach out?</p>
 
     <form
-      name="reach-out"
+      name="contactus"
+      action="#"
       method="post"
-      @submit.prevent="handleSubmit">
-      <input type="hidden" name="form-name" value="ask-question" />
-      <input type="text" placeholder="Name" name="name" required>
-      <input type="email" placeholder="Enter Email" name="email" required>
-      <textarea placeholder="Message" required></textarea>
-      <button class="btn">Send</button>
+      netlify
+      netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="contactus" />
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" required/>
+      </div>
+      <div>
+        <input type="email" name="email" required/>
+        <label for="email">Email:</label>
+      </div>
+      <div>
+        <textarea name="message" required></textarea>
+        <label for="message">Message:</label>
+      </div>
+      <button type="submit" value="Send message">Send</button>
     </form>
   </div>
 </template>
@@ -25,7 +37,7 @@ export default {
   data() {
     return {
       form: {
-        reachout: 'Test',
+        reachOut: 'Test',
       },
     };
   },
@@ -39,7 +51,7 @@ export default {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: this.encode({
-          reachOut: "test",
+          "reach-out": "test",
           ...this.form
         })
       })
