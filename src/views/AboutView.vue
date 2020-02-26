@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>About</h2>
-    <p>- Senior Engineer building UI things at @JustEat 👨🏽‍💻 🍔</p>
+    <p>- Senior Engineer building UI things @JustEat 👨🏽‍💻 🍔</p>
     <p>- Slinging code for cash since 2005 💰</p>
     <p><a class="bmc" href="https://www.buymeacoffee.com/8BjFsLO" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 31px !important;width: 137px !important;" ></a></p>
   </div>
