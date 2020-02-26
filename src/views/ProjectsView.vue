@@ -3,9 +3,8 @@
     <h2>Projects</h2>
     <p>Random things:</p>
     <a class="btn" href="https://github.com/kevinrodrigues" target="_blank">Github</a>
-    <p>Forgot an item whilst grocery shopping? `Out of Milk` helps you keep
-      track (Currently being built):</p>
-    <strong class="btn disabled">Out of Milk</strong>
+    <p>Forgot an item whilst shopping? `Need Milk` could help (Currently being built):</p>
+    <strong class="btn disabled">Need Milk</strong>
   </div>
 </template>
 
